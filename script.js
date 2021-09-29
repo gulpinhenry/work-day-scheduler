@@ -8,3 +8,9 @@ $(".description").each(function(index, element) {
     else
         $(element).attr("class", "past col-md-10");
 });
+$("button").on("click", function(event){
+    var btn = event.target;
+    console.log(event.target);
+    //textField.siblings("textarea").text("hi");
+
+});
