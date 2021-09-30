@@ -1,5 +1,7 @@
 var curTime = parseInt(moment().format("HH")); //gets current time of the page to render schedule color
+var time = moment().format("LL");
 
+$("#currentDay").text(time);
 /**
  * this loop renders each row based on the current time. If that hour has past, it will be marked gray
  * if it is the current hour it will be marked red, and labelled as current hour
